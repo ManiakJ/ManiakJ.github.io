@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.centralPhoto {
+    width: 45%;
+    float: left;
+
+    height: 930px;
+}
+
+#glownezdjecie {
+    width: 650px;
+    height: 920px;
+
+    margin-left: 5%;
+
+    -webkit-box-shadow: 8px 8px 100px 50px rgba(55, 55, 63, 1);
+    -moz-box-shadow: 8px 8px 100px 50px rgba(55, 55, 63, 1);
+    box-shadow: 8px 8px 100px 50px rgba(55, 55, 63, 1);
+
+    border-radius: 5px;
+}
+
+.scroll-photo {
+    text-align: center;
+    align-items: center;
+    margin: 0%;
+
+    height: 928px;
+    width: 54%;
+    float: right;
+    gap: 40px;
+
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+}
+
+#zdjecie4 {
+    margin-left: 20px;
+}
+
+#zdjecie8 {
+    margin-right: 20px;
+}
+
+#zdjecie1, #zdjecie2, #zdjecie3, #zdjecie4, #zdjecie5, #zdjecie6, #zdjecie7, #zdjecie8  {
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    
+    -webkit-box-shadow: 8px 8px 100px 33px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 100px 33px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 100px 33px rgba(66, 68, 90, 1);
+}
+
+#zdjecie1:hover, #zdjecie2:hover, #zdjecie3:hover, #zdjecie4:hover, #zdjecie5:hover, #zdjecie6:hover, #zdjecie7:hover, #zdjecie8:hover {
+    -webkit-box-shadow: 8px 8px 100px 50px rgba(55, 55, 63, 1);
+    -moz-box-shadow: 8px 8px 100px 50px rgba(55, 55, 63, 1);
+    box-shadow: 8px 8px 100px 50px rgba(55, 55, 63, 1);
+
+    transition-duration: 500ms;
+    cursor: pointer;
+
+}
+
+
+
+
+
+/* Telefon */
+@media screen and (max-width: 620px) {
+    .centralPhoto, .scroll-photo {
+        width: 100%;
+    }
+
+    .centralPhoto {
+        height: 750px;
+    }
+
+    #glownezdjecie {
+        width: 435px;
+        height: 750px;
+    }
+
+    .scroll-photo {
+        height: 500px;
+    }
+}
+
+/* Monitor */
+@media screen and (min-width: 1600px) {
+    .cialo {
+        height: 960px;
+    }
+    
+    .scroll-photo {
+        height: 960px;
+    }
+
+    #glownezdjecie {
+        width: 650px;
+        height: 955px;
+
+        margin-left: 10%;
+    }
+}
